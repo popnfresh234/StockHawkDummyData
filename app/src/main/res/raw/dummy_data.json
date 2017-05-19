@@ -1,0 +1,1318 @@
+{
+query: {
+count: 124,
+created: "2016-10-14T15:06:12Z",
+lang: "en-US",
+diagnostics: {
+url: [
+{
+execution-start-time: "1",
+execution-stop-time: "2",
+execution-time: "1",
+content: "http://www.datatables.org/yahoo/finance/yahoo.finance.historicaldata.xml"
+},
+{
+execution-start-time: "6",
+execution-stop-time: "7",
+execution-time: "1",
+content: "http://ichart.finance.yahoo.com/table.csv?a=8&b=11&e=10&g=d&c=2009&d=2&f=2010&s=YHOO"
+},
+{
+execution-start-time: "22",
+execution-stop-time: "23",
+execution-time: "1",
+content: "http://ichart.finance.yahoo.com/table.csv?a=8&b=11&e=10&g=d&c=2009&d=2&f=2010&s=YHOO"
+}
+],
+publiclyCallable: "true",
+cache: [
+{
+execution-start-time: "4",
+execution-stop-time: "5",
+execution-time: "1",
+method: "GET",
+type: "MEMCACHED",
+content: "ada24345cde45cf8aefbdeee1216fea1"
+},
+{
+execution-start-time: "8",
+execution-stop-time: "21",
+execution-time: "13",
+method: "GET",
+type: "MEMCACHED",
+content: "0a9a58f5ff8c171f82a1a6eff3cbed2c"
+}
+],
+query: [
+{
+execution-start-time: "5",
+execution-stop-time: "8",
+execution-time: "3",
+params: "{url=[http://ichart.finance.yahoo.com/table.csv?a=8&b=11&e=10&g=d&c=2009&d=2&f=2010&s=YHOO]}",
+content: "select * from csv(0,1) where url=@url"
+},
+{
+execution-start-time: "22",
+execution-stop-time: "25",
+execution-time: "3",
+params: "{columnsNames=[Date,Open,High,Low,Close,Volume,Adj_Close], url=[http://ichart.finance.yahoo.com/table.csv?a=8&b=11&e=10&g=d&c=2009&d=2&f=2010&s=YHOO]}",
+content: "select * from csv(2,0) where url=@url and columns=@columnsNames"
+}
+],
+javascript: {
+execution-start-time: "3",
+execution-stop-time: "189",
+execution-time: "186",
+instructions-used: "5965313",
+table-name: "yahoo.finance.historicaldata"
+},
+user-time: "192",
+service-time: "17",
+build-version: "2.0.54"
+},
+results: {
+quote: [
+{
+Symbol: "YHOO",
+Date: "2010-03-10",
+Open: "16.51",
+High: "16.940001",
+Low: "16.51",
+Close: "16.790001",
+Volume: "33088600",
+Adj_Close: "16.790001"
+},
+{
+Symbol: "YHOO",
+Date: "2010-03-09",
+Open: "16.41",
+High: "16.719999",
+Low: "16.40",
+Close: "16.530001",
+Volume: "20755200",
+Adj_Close: "16.530001"
+},
+{
+Symbol: "YHOO",
+Date: "2010-03-08",
+Open: "16.32",
+High: "16.610001",
+Low: "16.299999",
+Close: "16.52",
+Volume: "30554000",
+Adj_Close: "16.52"
+},
+{
+Symbol: "YHOO",
+Date: "2010-03-05",
+Open: "15.89",
+High: "16.379999",
+Low: "15.89",
+Close: "16.059999",
+Volume: "21415000",
+Adj_Close: "16.059999"
+},
+{
+Symbol: "YHOO",
+Date: "2010-03-04",
+Open: "15.55",
+High: "15.85",
+Low: "15.52",
+Close: "15.81",
+Volume: "22906000",
+Adj_Close: "15.81"
+},
+{
+Symbol: "YHOO",
+Date: "2010-03-03",
+Open: "15.85",
+High: "15.85",
+Low: "15.55",
+Close: "15.57",
+Volume: "20613800",
+Adj_Close: "15.57"
+},
+{
+Symbol: "YHOO",
+Date: "2010-03-02",
+Open: "15.87",
+High: "15.96",
+Low: "15.67",
+Close: "15.73",
+Volume: "20101800",
+Adj_Close: "15.73"
+},
+{
+Symbol: "YHOO",
+Date: "2010-03-01",
+Open: "15.43",
+High: "15.83",
+Low: "15.40",
+Close: "15.79",
+Volume: "17238000",
+Adj_Close: "15.79"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-26",
+Open: "15.27",
+High: "15.41",
+Low: "15.16",
+Close: "15.31",
+Volume: "14975600",
+Adj_Close: "15.31"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-25",
+Open: "15.32",
+High: "15.35",
+Low: "15.13",
+Close: "15.24",
+Volume: "20126900",
+Adj_Close: "15.24"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-24",
+Open: "15.48",
+High: "15.71",
+Low: "15.33",
+Close: "15.59",
+Volume: "19284200",
+Adj_Close: "15.59"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-23",
+Open: "15.45",
+High: "15.51",
+Low: "15.14",
+Close: "15.38",
+Volume: "18346700",
+Adj_Close: "15.38"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-22",
+Open: "15.61",
+High: "15.68",
+Low: "15.44",
+Close: "15.49",
+Volume: "10463500",
+Adj_Close: "15.49"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-19",
+Open: "15.49",
+High: "15.71",
+Low: "15.33",
+Close: "15.58",
+Volume: "15407900",
+Adj_Close: "15.58"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-18",
+Open: "15.40",
+High: "15.60",
+Low: "15.32",
+Close: "15.54",
+Volume: "13700100",
+Adj_Close: "15.54"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-17",
+Open: "15.50",
+High: "15.52",
+Low: "15.32",
+Close: "15.44",
+Volume: "12731900",
+Adj_Close: "15.44"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-16",
+Open: "15.23",
+High: "15.48",
+Low: "15.18",
+Close: "15.41",
+Volume: "21447200",
+Adj_Close: "15.41"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-12",
+Open: "15.07",
+High: "15.19",
+Low: "14.85",
+Close: "15.17",
+Volume: "18926400",
+Adj_Close: "15.17"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-11",
+Open: "14.87",
+High: "15.25",
+Low: "14.77",
+Close: "15.22",
+Volume: "24509500",
+Adj_Close: "15.22"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-10",
+Open: "15.02",
+High: "15.02",
+Low: "14.48",
+Close: "14.80",
+Volume: "36518100",
+Adj_Close: "14.80"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-09",
+Open: "15.20",
+High: "15.24",
+Low: "14.94",
+Close: "15.07",
+Volume: "16716900",
+Adj_Close: "15.07"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-08",
+Open: "15.18",
+High: "15.47",
+Low: "14.95",
+Close: "14.99",
+Volume: "19856400",
+Adj_Close: "14.99"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-05",
+Open: "15.01",
+High: "15.25",
+Low: "14.92",
+Close: "15.19",
+Volume: "20713800",
+Adj_Close: "15.19"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-04",
+Open: "15.34",
+High: "15.52",
+Low: "14.99",
+Close: "15.01",
+Volume: "27668100",
+Adj_Close: "15.01"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-03",
+Open: "15.12",
+High: "15.60",
+Low: "15.12",
+Close: "15.46",
+Volume: "24730600",
+Adj_Close: "15.46"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-02",
+Open: "15.10",
+High: "15.32",
+Low: "15.03",
+Close: "15.17",
+Volume: "27555200",
+Adj_Close: "15.17"
+},
+{
+Symbol: "YHOO",
+Date: "2010-02-01",
+Open: "15.14",
+High: "15.30",
+Low: "14.87",
+Close: "15.05",
+Volume: "29865700",
+Adj_Close: "15.05"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-29",
+Open: "15.51",
+High: "15.67",
+Low: "14.90",
+Close: "15.01",
+Volume: "39664600",
+Adj_Close: "15.01"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-28",
+Open: "15.93",
+High: "15.96",
+Low: "15.44",
+Close: "15.44",
+Volume: "30159500",
+Adj_Close: "15.44"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-27",
+Open: "16.459999",
+High: "16.49",
+Low: "15.77",
+Close: "15.98",
+Volume: "41701000",
+Adj_Close: "15.98"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-26",
+Open: "15.82",
+High: "16.17",
+Low: "15.70",
+Close: "15.99",
+Volume: "43979400",
+Adj_Close: "15.99"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-25",
+Open: "16.07",
+High: "16.110001",
+Low: "15.74",
+Close: "15.86",
+Volume: "19683700",
+Adj_Close: "15.86"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-22",
+Open: "16.08",
+High: "16.209999",
+Low: "15.81",
+Close: "15.88",
+Volume: "25132800",
+Adj_Close: "15.88"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-21",
+Open: "16.389999",
+High: "16.58",
+Low: "16.10",
+Close: "16.200001",
+Volume: "21858400",
+Adj_Close: "16.200001"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-20",
+Open: "16.65",
+High: "16.68",
+Low: "16.25",
+Close: "16.379999",
+Volume: "14419500",
+Adj_Close: "16.379999"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-19",
+Open: "16.780001",
+High: "16.959999",
+Low: "16.639999",
+Close: "16.75",
+Volume: "15182600",
+Adj_Close: "16.75"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-15",
+Open: "17.25",
+High: "17.25",
+Low: "16.75",
+Close: "16.82",
+Volume: "18415000",
+Adj_Close: "16.82"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-14",
+Open: "16.809999",
+High: "17.23",
+Low: "16.799999",
+Close: "17.120001",
+Volume: "16715600",
+Adj_Close: "17.120001"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-13",
+Open: "16.879999",
+High: "16.98",
+Low: "16.65",
+Close: "16.90",
+Volume: "16955600",
+Adj_Close: "16.90"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-12",
+Open: "16.65",
+High: "16.860001",
+Low: "16.60",
+Close: "16.68",
+Volume: "15672400",
+Adj_Close: "16.68"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-11",
+Open: "16.77",
+High: "16.83",
+Low: "16.48",
+Close: "16.74",
+Volume: "16181900",
+Adj_Close: "16.74"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-08",
+Open: "16.68",
+High: "16.76",
+Low: "16.620001",
+Close: "16.700001",
+Volume: "15470000",
+Adj_Close: "16.700001"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-07",
+Open: "16.809999",
+High: "16.90",
+Low: "16.57",
+Close: "16.700001",
+Volume: "31816300",
+Adj_Close: "16.700001"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-06",
+Open: "17.17",
+High: "17.299999",
+Low: "17.07",
+Close: "17.17",
+Volume: "16422000",
+Adj_Close: "17.17"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-05",
+Open: "17.219999",
+High: "17.23",
+Low: "17.00",
+Close: "17.23",
+Volume: "11718100",
+Adj_Close: "17.23"
+},
+{
+Symbol: "YHOO",
+Date: "2010-01-04",
+Open: "16.940001",
+High: "17.200001",
+Low: "16.879999",
+Close: "17.10",
+Volume: "16587400",
+Adj_Close: "17.10"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-31",
+Open: "16.92",
+High: "16.959999",
+Low: "16.77",
+Close: "16.780001",
+Volume: "9515600",
+Adj_Close: "16.780001"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-30",
+Open: "16.83",
+High: "16.99",
+Low: "16.809999",
+Close: "16.98",
+Volume: "8188000",
+Adj_Close: "16.98"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-29",
+Open: "16.84",
+High: "16.969999",
+Low: "16.68",
+Close: "16.92",
+Volume: "13450200",
+Adj_Close: "16.92"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-28",
+Open: "16.74",
+High: "16.940001",
+Low: "16.68",
+Close: "16.879999",
+Volume: "11504300",
+Adj_Close: "16.879999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-24",
+Open: "16.690001",
+High: "16.75",
+Low: "16.65",
+Close: "16.719999",
+Volume: "4736600",
+Adj_Close: "16.719999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-23",
+Open: "16.35",
+High: "16.700001",
+Low: "16.00",
+Close: "16.67",
+Volume: "23584100",
+Adj_Close: "16.67"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-22",
+Open: "15.88",
+High: "16.08",
+Low: "15.82",
+Close: "15.98",
+Volume: "10631600",
+Adj_Close: "15.98"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-21",
+Open: "16.110001",
+High: "16.17",
+Low: "15.85",
+Close: "15.88",
+Volume: "17806100",
+Adj_Close: "15.88"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-18",
+Open: "15.94",
+High: "16.139999",
+Low: "15.78",
+Close: "16.139999",
+Volume: "30021100",
+Adj_Close: "16.139999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-17",
+Open: "15.72",
+High: "15.96",
+Low: "15.64",
+Close: "15.82",
+Volume: "26156700",
+Adj_Close: "15.82"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-16",
+Open: "15.57",
+High: "15.82",
+Low: "15.47",
+Close: "15.79",
+Volume: "20637500",
+Adj_Close: "15.79"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-15",
+Open: "15.77",
+High: "15.88",
+Low: "15.65",
+Close: "15.74",
+Volume: "13272900",
+Adj_Close: "15.74"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-14",
+Open: "15.90",
+High: "15.97",
+Low: "15.64",
+Close: "15.81",
+Volume: "18086300",
+Adj_Close: "15.81"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-11",
+Open: "15.85",
+High: "15.90",
+Low: "15.62",
+Close: "15.74",
+Volume: "22607500",
+Adj_Close: "15.74"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-10",
+Open: "15.34",
+High: "15.57",
+Low: "15.24",
+Close: "15.49",
+Volume: "18743000",
+Adj_Close: "15.49"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-09",
+Open: "15.52",
+High: "15.54",
+Low: "15.12",
+Close: "15.18",
+Volume: "25396900",
+Adj_Close: "15.18"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-08",
+Open: "15.45",
+High: "15.90",
+Low: "15.23",
+Close: "15.45",
+Volume: "31160600",
+Adj_Close: "15.45"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-07",
+Open: "15.36",
+High: "15.65",
+Low: "15.32",
+Close: "15.45",
+Volume: "18035200",
+Adj_Close: "15.45"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-04",
+Open: "15.32",
+High: "15.38",
+Low: "15.00",
+Close: "15.19",
+Volume: "17576000",
+Adj_Close: "15.19"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-03",
+Open: "15.33",
+High: "15.38",
+Low: "15.10",
+Close: "15.11",
+Volume: "17196200",
+Adj_Close: "15.11"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-02",
+Open: "15.17",
+High: "15.50",
+Low: "15.16",
+Close: "15.31",
+Volume: "17807800",
+Adj_Close: "15.31"
+},
+{
+Symbol: "YHOO",
+Date: "2009-12-01",
+Open: "15.03",
+High: "15.19",
+Low: "14.85",
+Close: "15.13",
+Volume: "17096500",
+Adj_Close: "15.13"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-30",
+Open: "14.90",
+High: "15.10",
+Low: "14.80",
+Close: "14.97",
+Volume: "17587000",
+Adj_Close: "14.97"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-27",
+Open: "15.04",
+High: "15.09",
+Low: "14.88",
+Close: "15.00",
+Volume: "11452900",
+Adj_Close: "15.00"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-25",
+Open: "15.29",
+High: "15.35",
+Low: "15.17",
+Close: "15.30",
+Volume: "21370600",
+Adj_Close: "15.30"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-24",
+Open: "15.38",
+High: "15.49",
+Low: "15.20",
+Close: "15.24",
+Volume: "19774000",
+Adj_Close: "15.24"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-23",
+Open: "15.58",
+High: "15.65",
+Low: "15.34",
+Close: "15.45",
+Volume: "24501400",
+Adj_Close: "15.45"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-20",
+Open: "15.60",
+High: "15.74",
+Low: "15.36",
+Close: "15.38",
+Volume: "16127300",
+Adj_Close: "15.38"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-19",
+Open: "15.83",
+High: "15.85",
+Low: "15.52",
+Close: "15.61",
+Volume: "26891000",
+Adj_Close: "15.61"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-18",
+Open: "16.02",
+High: "16.129999",
+Low: "15.84",
+Close: "15.98",
+Volume: "12775400",
+Adj_Close: "15.98"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-17",
+Open: "15.89",
+High: "16.110001",
+Low: "15.73",
+Close: "16.049999",
+Volume: "22249500",
+Adj_Close: "16.049999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-16",
+Open: "16.08",
+High: "16.190001",
+Low: "15.92",
+Close: "16.07",
+Volume: "26125200",
+Adj_Close: "16.07"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-13",
+Open: "16.040001",
+High: "16.10",
+Low: "15.92",
+Close: "15.93",
+Volume: "26453800",
+Adj_Close: "15.93"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-12",
+Open: "16.10",
+High: "16.280001",
+Low: "15.97",
+Close: "16.00",
+Volume: "10210100",
+Adj_Close: "16.00"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-11",
+Open: "16.00",
+High: "16.16",
+Low: "15.92",
+Close: "16.09",
+Volume: "16346100",
+Adj_Close: "16.09"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-10",
+Open: "16.08",
+High: "16.360001",
+Low: "16.01",
+Close: "16.040001",
+Volume: "24097400",
+Adj_Close: "16.040001"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-09",
+Open: "16.129999",
+High: "16.190001",
+Low: "15.97",
+Close: "16.02",
+Volume: "14831900",
+Adj_Close: "16.02"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-06",
+Open: "15.89",
+High: "16.030001",
+Low: "15.76",
+Close: "15.94",
+Volume: "13562500",
+Adj_Close: "15.94"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-05",
+Open: "15.80",
+High: "16.00",
+Low: "15.74",
+Close: "15.90",
+Volume: "27732500",
+Adj_Close: "15.90"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-04",
+Open: "15.90",
+High: "15.90",
+Low: "15.66",
+Close: "15.69",
+Volume: "18697100",
+Adj_Close: "15.69"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-03",
+Open: "15.71",
+High: "15.79",
+Low: "15.63",
+Close: "15.70",
+Volume: "17240200",
+Adj_Close: "15.70"
+},
+{
+Symbol: "YHOO",
+Date: "2009-11-02",
+Open: "15.75",
+High: "15.90",
+Low: "15.59",
+Close: "15.85",
+Volume: "15258200",
+Adj_Close: "15.85"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-30",
+Open: "16.059999",
+High: "16.370001",
+Low: "15.80",
+Close: "15.90",
+Volume: "22321700",
+Adj_Close: "15.90"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-29",
+Open: "16.190001",
+High: "16.379999",
+Low: "15.74",
+Close: "16.129999",
+Volume: "39146700",
+Adj_Close: "16.129999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-28",
+Open: "16.690001",
+High: "16.77",
+Low: "16.02",
+Close: "16.040001",
+Volume: "25044800",
+Adj_Close: "16.040001"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-27",
+Open: "16.690001",
+High: "16.870001",
+Low: "16.35",
+Close: "16.690001",
+Volume: "19917800",
+Adj_Close: "16.690001"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-26",
+Open: "17.049999",
+High: "17.200001",
+Low: "16.67",
+Close: "16.870001",
+Volume: "21213100",
+Adj_Close: "16.870001"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-23",
+Open: "17.709999",
+High: "17.75",
+Low: "17.09",
+Close: "17.219999",
+Volume: "17760400",
+Adj_Close: "17.219999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-22",
+Open: "17.540001",
+High: "17.75",
+Low: "17.299999",
+Close: "17.67",
+Volume: "16018100",
+Adj_Close: "17.67"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-21",
+Open: "17.98",
+High: "18.02",
+Low: "17.57",
+Close: "17.66",
+Volume: "46204500",
+Adj_Close: "17.66"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-20",
+Open: "17.370001",
+High: "17.41",
+Low: "16.870001",
+Close: "17.17",
+Volume: "38320400",
+Adj_Close: "17.17"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-19",
+Open: "16.799999",
+High: "17.290001",
+Low: "16.700001",
+Close: "17.219999",
+Volume: "17878000",
+Adj_Close: "17.219999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-16",
+Open: "16.610001",
+High: "16.85",
+Low: "16.40",
+Close: "16.809999",
+Volume: "20479000",
+Adj_Close: "16.809999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-15",
+Open: "16.84",
+High: "16.889999",
+Low: "16.459999",
+Close: "16.52",
+Volume: "24337300",
+Adj_Close: "16.52"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-14",
+Open: "16.93",
+High: "17.030001",
+Low: "16.82",
+Close: "16.950001",
+Volume: "17508000",
+Adj_Close: "16.950001"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-13",
+Open: "16.950001",
+High: "17.00",
+Low: "16.809999",
+Close: "16.879999",
+Volume: "19492500",
+Adj_Close: "16.879999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-12",
+Open: "16.959999",
+High: "17.110001",
+Low: "16.66",
+Close: "16.75",
+Volume: "16904700",
+Adj_Close: "16.75"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-09",
+Open: "17.43",
+High: "17.48",
+Low: "16.84",
+Close: "16.870001",
+Volume: "29015700",
+Adj_Close: "16.870001"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-08",
+Open: "17.629999",
+High: "17.860001",
+Low: "17.540001",
+Close: "17.58",
+Volume: "27966900",
+Adj_Close: "17.58"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-07",
+Open: "17.219999",
+High: "17.49",
+Low: "17.15",
+Close: "17.49",
+Volume: "12456700",
+Adj_Close: "17.49"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-06",
+Open: "16.959999",
+High: "17.35",
+Low: "16.950001",
+Close: "17.299999",
+Volume: "21427600",
+Adj_Close: "17.299999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-05",
+Open: "16.85",
+High: "17.129999",
+Low: "16.66",
+Close: "16.799999",
+Volume: "22224900",
+Adj_Close: "16.799999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-02",
+Open: "17.23",
+High: "17.35",
+Low: "16.780001",
+Close: "16.84",
+Volume: "32685300",
+Adj_Close: "16.84"
+},
+{
+Symbol: "YHOO",
+Date: "2009-10-01",
+Open: "17.65",
+High: "17.719999",
+Low: "17.200001",
+Close: "17.389999",
+Volume: "24871600",
+Adj_Close: "17.389999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-30",
+Open: "17.48",
+High: "17.940001",
+Low: "17.24",
+Close: "17.809999",
+Volume: "39878200",
+Adj_Close: "17.809999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-29",
+Open: "17.50",
+High: "17.66",
+Low: "17.209999",
+Close: "17.450001",
+Volume: "31600100",
+Adj_Close: "17.450001"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-28",
+Open: "16.98",
+High: "17.469999",
+Low: "16.950001",
+Close: "17.469999",
+Volume: "26412200",
+Adj_Close: "17.469999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-25",
+Open: "16.799999",
+High: "17.15",
+Low: "16.75",
+Close: "17.08",
+Volume: "20701400",
+Adj_Close: "17.08"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-24",
+Open: "17.309999",
+High: "17.32",
+Low: "16.65",
+Close: "16.889999",
+Volume: "26493700",
+Adj_Close: "16.889999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-23",
+Open: "17.10",
+High: "17.60",
+Low: "16.969999",
+Close: "17.209999",
+Volume: "36814300",
+Adj_Close: "17.209999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-22",
+Open: "17.17",
+High: "17.219999",
+Low: "16.75",
+Close: "16.860001",
+Volume: "30588800",
+Adj_Close: "16.860001"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-21",
+Open: "17.23",
+High: "17.23",
+Low: "16.959999",
+Close: "17.040001",
+Volume: "26826900",
+Adj_Close: "17.040001"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-18",
+Open: "17.700001",
+High: "17.700001",
+Low: "16.85",
+Close: "17.389999",
+Volume: "86402600",
+Adj_Close: "17.389999"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-17",
+Open: "17.00",
+High: "17.790001",
+Low: "16.959999",
+Close: "17.50",
+Volume: "62010000",
+Adj_Close: "17.50"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-16",
+Open: "16.57",
+High: "17.110001",
+Low: "16.52",
+Close: "16.99",
+Volume: "53594700",
+Adj_Close: "16.99"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-15",
+Open: "16.01",
+High: "16.49",
+Low: "15.87",
+Close: "16.41",
+Volume: "64668200",
+Adj_Close: "16.41"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-14",
+Open: "15.45",
+High: "15.58",
+Low: "15.28",
+Close: "15.57",
+Volume: "19451200",
+Adj_Close: "15.57"
+},
+{
+Symbol: "YHOO",
+Date: "2009-09-11",
+Open: "15.53",
+High: "15.68",
+Low: "15.41",
+Close: "15.59",
+Volume: "26860700",
+Adj_Close: "15.59"
+}
+]
+}
+}
+}
