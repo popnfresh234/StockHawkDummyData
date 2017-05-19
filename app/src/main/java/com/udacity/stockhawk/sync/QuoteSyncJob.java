@@ -92,12 +92,10 @@ public final class QuoteSyncJob {
                 float change = quote.getChange().floatValue();
                 float percentChange = quote.getChangeInPercent().floatValue();
 
-                // WARNING! Don't request historical data for a stock that doesn't exist!
-                // The request will hang forever X_x
-//                List<HistoricalQuote> history = stock.getHistory(from, to, Interval.WEEKLY);
-//
-
-
+/*
+                Begin dummy data code, Please remove this when API is functioning again or we have a better solution
+                ----------------------------------------------------------------------------------------------------
+*/
 
                 List<HistoricalQuote> history = new ArrayList<>();
 
@@ -149,6 +147,12 @@ public final class QuoteSyncJob {
                     historyBuilder.append(it.getClosingPrice());
                     historyBuilder.append("\n");
                 }
+
+                /*
+                ----------------------------------------------------------------------------------------------------
+                End dummy data code
+                */
+
 
                 ContentValues quoteCV = new ContentValues();
                 quoteCV.put(Contract.Quote.COLUMN_SYMBOL, symbol);
